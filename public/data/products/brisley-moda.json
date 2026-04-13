@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "remera-basica",
+      "name": "Remera básica",
+      "description": "Algodón peinado, varios talles",
+      "price": 29,
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80"
+    },
+    {
+      "id": "jean-slim",
+      "name": "Jean slim",
+      "description": "Denim elastizado, tiro medio",
+      "price": 65,
+      "sizes": ["28", "30", "32", "34", "36"],
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21a3243?w=600&q=80"
+    },
+    {
+      "id": "campera-denim",
+      "name": "Campera denim",
+      "description": "Corte clásico, bolsillos delanteros",
+      "price": 79,
+      "sizes": ["S", "M", "L"],
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80"
+    },
+    {
+      "id": "vestido-floral",
+      "name": "Vestido estampado",
+      "description": "Tela liviana, manga corta",
+      "price": 55,
+      "sizes": ["XS", "S", "M", "L"],
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059581ff8?w=600&q=80"
+    },
+    {
+      "id": "bufanda-lana",
+      "name": "Bufanda tejida",
+      "description": "Mezcla suave, tonos neutros",
+      "price": 16,
+      "sizes": ["Única"],
+      "image": "https://images.unsplash.com/photo-1520903920243-00d872a62158?w=600&q=80"
+    }
+  ]
+}

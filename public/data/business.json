@@ -1,0 +1,10 @@
+{
+  "business": {
+    "id": "brisley-moda",
+    "name": "Brisley Moda",
+    "tagline": "Indumentaria y accesorios — pedidos por WhatsApp",
+    "whatsapp": "593989228888",
+    "currency": "USD",
+    "productsFile": "brisley-moda"
+  }
+}
