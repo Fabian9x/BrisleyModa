@@ -2,7 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-/** Nombre del repositorio en GitHub (sin barras). Solo afecta al build de producción. */
+/**
+ * GitHub Pages (repo de proyecto): assets con ruta absoluta al repo.
+ * Si cambiás el nombre del repo en GitHub, actualizá también `ghRepo`.
+ */
 const ghRepo = 'BrisleyModa'
 
 // https://vite.dev/config/
