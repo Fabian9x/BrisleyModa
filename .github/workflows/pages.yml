@@ -1,3 +1,6 @@
+# Publica la carpeta dist/ (build de Vite). En el repo: Settings → Pages → Source = GitHub Actions.
+# Si en vez de eso elegís "Deploy from a branch" en la raíz del repo, se sirve el index.html
+# fuente con /src/main.tsx y falla (404). Tiene que ser este workflow.
 name: Desplegar en GitHub Pages
 
 on:
@@ -25,6 +28,16 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Comprobar que dist es un build de producción
+        run: |
+          if grep -q 'src/main.tsx' dist/index.html; then
+            echo "::error::dist/index.html sigue apuntando a Vite en desarrollo. Revisá vite.config (base)."
+            exit 1
+          fi
+          if ! grep -q "/${{ github.event.repository.name }}/assets/" dist/index.html; then
+            echo "::error::dist/index.html no incluye assets con la base del repo."
+            exit 1
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
